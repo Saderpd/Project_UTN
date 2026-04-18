@@ -1,0 +1,47 @@
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 56px);
+    padding: 1rem;
+}
+
+.register form {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.register h1 {
+    margin-bottom: 1rem;
+}
+
+.grupo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.grupo-form select,
+.grupo-form input {
+    padding: 3px;
+}
+
+.option-genero-form,
+.checkbox-form {
+    padding: 2px;
+}
+
+.btn {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 10px 20px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}

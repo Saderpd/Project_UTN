@@ -1,0 +1,142 @@
+@import url(register-login.css);
+@import url(galeria.css);
+
+/*mobile-first */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(148, 148, 148);
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/*colores   Negro:0,0,0   Blanco:255,255,255   Gris:#949494 rgb:148,148,148 */
+/*Barra de Nav*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    display: none;
+}
+
+.logo {
+    background-image: url(../img/Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+}
+
+.btn-menu {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+}
+
+.btn-menu svg {
+    height: 100%;
+    width: 100%;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+nav svg {
+    width: 28px;
+    height: 28px;
+    fill: rgb(255, 255, 255);
+}
+
+/*footer*/
+
+/*tablet*/
+@media (min-width: 768px) {
+
+    /*Barra de Nav*/
+    .logo {
+        height: 32px;
+        width: 32px;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    nav svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    /*GALERIA*/
+    .galeria-grid {
+        columns: 3;
+    }
+}
+
+/*desktop*/
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    /*Barra de Nav*/
+    nav {
+        height: 70px;
+    }
+
+    /*Galeria*/
+    .galeria-grid {
+        columns: 5;
+    }
+
+    .info-galeria {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .item-galeria:hover .info-galeria {
+        opacity: 1;
+    }
+
+    /*Register*/
+    .register {
+        min-height: calc(100vh - 70px);
+    }
+
+}
