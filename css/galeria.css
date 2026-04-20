@@ -1,5 +1,6 @@
 .galeria {
     padding: 1rem;
+    min-height: calc(100vh - 56px);
 }
 
 .galeria-grid {

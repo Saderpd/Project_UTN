@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <!-- BARRA DE NAVEGACION -->
     <header>
@@ -28,19 +30,100 @@
                 </svg>
             </button>
             <a href="login.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path d="M320 400C394.6 400 458.4 353.6 484 288L488 288C501.3 288 512 277.3 512 264L512 184C512 170.7 501.3 160 488 160L484 160C458.4 94.4 394.6 48 320 48C245.4 48 181.6 94.4 156 160L152 160C138.7 160 128 170.7 128 184L128 264C128 277.3 138.7 288 152 288L156 288C181.6 353.6 245.4 400 320 400zM304 144L336 144C389 144 432 187 432 240C432 293 389 336 336 336L304 336C251 336 208 293 208 240C208 187 251 144 304 144zM112 548.6C112 563.7 124.3 576 139.4 576L192 576L192 528C192 510.3 206.3 496 224 496L416 496C433.7 496 448 510.3 448 528L448 576L500.6 576C515.7 576 528 563.7 528 548.6C528 488.8 496.1 436.4 448.4 407.6C412 433.1 367.8 448 320 448C272.2 448 228 433.1 191.6 407.6C143.9 436.4 112 488.8 112 548.6zM279.3 205.5C278.4 202.2 275.4 200 272 200C268.6 200 265.6 202.2 264.7 205.5L258.7 226.7L237.5 232.7C234.2 233.6 232 236.6 232 240C232 243.4 234.2 246.4 237.5 247.3L258.7 253.3L264.7 274.5C265.6 277.8 268.6 280 272 280C275.4 280 278.4 277.8 279.3 274.5L285.3 253.3L306.5 247.3C309.8 246.4 312 243.4 312 240C312 236.6 309.8 233.6 306.5 232.7L285.3 226.7L279.3 205.5zM248 552L248 576L296 576L296 552C296 538.7 285.3 528 272 528C258.7 528 248 538.7 248 552zM368 528C354.7 528 344 538.7 344 552L344 576L392 576L392 552C392 538.7 381.3 528 368 528z"/>
-                    </svg>
-                </a>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <path
+                        d="M320 400C394.6 400 458.4 353.6 484 288L488 288C501.3 288 512 277.3 512 264L512 184C512 170.7 501.3 160 488 160L484 160C458.4 94.4 394.6 48 320 48C245.4 48 181.6 94.4 156 160L152 160C138.7 160 128 170.7 128 184L128 264C128 277.3 138.7 288 152 288L156 288C181.6 353.6 245.4 400 320 400zM304 144L336 144C389 144 432 187 432 240C432 293 389 336 336 336L304 336C251 336 208 293 208 240C208 187 251 144 304 144zM112 548.6C112 563.7 124.3 576 139.4 576L192 576L192 528C192 510.3 206.3 496 224 496L416 496C433.7 496 448 510.3 448 528L448 576L500.6 576C515.7 576 528 563.7 528 548.6C528 488.8 496.1 436.4 448.4 407.6C412 433.1 367.8 448 320 448C272.2 448 228 433.1 191.6 407.6C143.9 436.4 112 488.8 112 548.6zM279.3 205.5C278.4 202.2 275.4 200 272 200C268.6 200 265.6 202.2 264.7 205.5L258.7 226.7L237.5 232.7C234.2 233.6 232 236.6 232 240C232 243.4 234.2 246.4 237.5 247.3L258.7 253.3L264.7 274.5C265.6 277.8 268.6 280 272 280C275.4 280 278.4 277.8 279.3 274.5L285.3 253.3L306.5 247.3C309.8 246.4 312 243.4 312 240C312 236.6 309.8 233.6 306.5 232.7L285.3 226.7L279.3 205.5zM248 552L248 576L296 576L296 552C296 538.7 285.3 528 272 528C258.7 528 248 538.7 248 552zM368 528C354.7 528 344 538.7 344 552L344 576L392 576L392 552C392 538.7 381.3 528 368 528z" />
+                </svg>
+            </a>
         </nav>
     </header>
-    <!-- TARJETAS DE PROYECTOS -->
+    <!-- MIS PROYECTOS -->
     <main>
-        <h1>Proyectos</h1>
+        <section class="pagina-proyectos">
+            <h1>Proyectos</h1>
+            <div class="dashboard">
+                <!-- COLUMNA EN PROGRESO ------------------------------------------------------------------------------------------------------------>
+                <div class="columna">
+                    <div class="columna-header">
+                        <h2>En Progreso</h2>
+                        <span class="contador">3</span>
+                    </div>
+                    <div class="card">
+                        <img src="../img/galeria-8.jpg" alt="proyecto 1">
+                        <div class="name-proyecto">
+                            <h3>Proyecto 1</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/galeria-9.jpg" alt="proyecto 2">
+                        <div class="name-proyecto">
+                            <h3>Proyecto 2</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/galeria-2.jpg" alt="proyecto 3">
+                        <div class="name-proyecto">
+                            <h3>Proyecto 3</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- COLUMNA PAUSADO ----------------------------------------------------------------------------------------------------------------->
+                <div class="columna">
+                    <div class="columna-header">
+                        <h2>Pausado</h2>
+                        <span class="contador">2</span>
+                    </div>
+                    <div class="card">
+                        <img src="../img/galeria-1.jpg" alt="proyecto 4">
+                        <div class="name-proyecto">
+                            <h3>Proyecto 4</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/galeria-6.png" alt="proyecto 5">
+                        <div class="name-proyecto">
+                            <h3>Proyecto 5</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- COLUMNA TERMINADO -------------------------------------------------------------------------------------------------------------->
+                <div class="columna">
+                    <div class="columna-header">
+                        <h2>Terminado</h2>
+                        <span class="contador">4</span>
+                    </div>
+                    <div class="card">
+                        <img src="../img/galeria-7.png" alt="proyecto 6">
+                        <div class="name-proyecto">
+                            <h3>Proyecto 6</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/galeria-12.jpg" alt="proyecto 7">
+                        <div class="name-proyecto">
+                            <h3>Proyecto 7</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/galeria-11.jpg" alt="proyecto 8">
+                        <div class="name-proyecto">
+                            <h3>Proyecto 8</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/galeria-3.jpg" alt="proyecto 9">
+                        <div class="name-proyecto">
+                            <h3>Proyecto 9</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- FOOTER -->
     <footer>
-
+        <p>&copy; 2026 Proyecto UTN. Todos los derechos reservados.</p>
     </footer>
 </body>
+
 </html>
